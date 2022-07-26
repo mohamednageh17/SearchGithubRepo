@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/searchResultsFragment">
+
+    <fragment
+        android:id="@+id/searchResultsFragment"
+        android:name="com.example.searchgithubrepo.presentation.features.search_results.SearchResultsFragment"
+        android:label="SearchResultsFragment">
+        <action
+            android:id="@+id/viewDetails"
+            app:destination="@id/repoDetailsFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/repoDetailsFragment"
+        android:name="com.example.searchgithubrepo.presentation.features.details.RepoDetailsFragment"
+        android:label="RepoDetailsFragment">
+        <argument
+            android:name="repo"
+            app:argType="com.example.searchgithubrepo.domain.model.RepoModel" />
+    </fragment>
+</navigation>

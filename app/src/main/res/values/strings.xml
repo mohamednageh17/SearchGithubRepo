@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SearchGithubRepo</string>
+    <string name="retry">Retry</string>
+    <string name="usename">Username</string>
+    <string name="network_not_available">no internet connection</string>
+    <string name="search_title">search</string>
+    <string name="repoDetailsIVDescription">Repository Avatar</string>
+    <string name="stargazerCount">Stargazers</string>
+    <string name="forks">Forks</string>
+    <string name="issues">Issues</string>
+    <string name="repo_name">Repository Name</string>
+    <string name="repo_description">Repository Description</string>
+</resources>
